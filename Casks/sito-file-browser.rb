@@ -11,7 +11,7 @@ cask "sito-file-browser" do
   desc "File browser with an AI-friendly `sfb` CLI"
   homepage "https://github.com/sito8943/sito-file-browser"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Sito File Browser.app"
   binary "#{appdir}/Sito File Browser.app/Contents/MacOS/sfb", target: "sfb"
