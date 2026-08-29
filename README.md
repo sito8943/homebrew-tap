@@ -29,20 +29,21 @@ Installing does two things:
 ## Sito WireGuard VPN
 
 ```bash
-brew install --cask --no-quarantine sito8943/tap/sito-wireguard-vpn
+brew install --cask sito8943/tap/sito-wireguard-vpn
+xattr -dr com.apple.quarantine "/Applications/Sito WireGuard VPN.app"
 ```
 
 - Installs **Sito WireGuard VPN.app** in `/Applications` and pulls in
   [`wireguard-tools`](https://formulae.brew.sh/formula/wireguard-tools) automatically (the app
   drives `wg-quick` under the hood).
-- `--no-quarantine` skips the Gatekeeper quarantine flag so the unsigned app opens on first
-  launch — see below for the manual alternative.
+- The `xattr` clears the Gatekeeper quarantine flag so the unsigned app opens on first launch
+  (Homebrew 6 removed the old `--no-quarantine` flag) — see below for the right-click
+  alternative.
 
 ## First launch (unsigned builds)
 
 The apps are currently **not code-signed / notarized**, so macOS Gatekeeper blocks the first
-launch. Either install with `--no-quarantine`, or clear the quarantine flag once, right after
-installing:
+launch. Clear the quarantine flag once, right after installing:
 
 ```bash
 xattr -dr com.apple.quarantine "/Applications/Sito File Browser.app"

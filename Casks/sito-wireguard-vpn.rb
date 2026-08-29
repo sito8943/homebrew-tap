@@ -22,9 +22,9 @@ cask "sito-wireguard-vpn" do
   ]
 
   caveats <<~CAVEATS
-    La app no está firmada. Si macOS bloquea el primer arranque, instala con:
-      brew install --cask --no-quarantine sito8943/tap/sito-wireguard-vpn
-    o quita la cuarentena a mano:
-      xattr -cr "/Applications/Sito WireGuard VPN.app"
+    La app no está firmada. Quita la cuarentena tras instalar para que macOS
+    no bloquee el primer arranque:
+      xattr -dr com.apple.quarantine "/Applications/Sito WireGuard VPN.app"
+    (o ábrela una vez con click derecho → Abrir)
   CAVEATS
 end
