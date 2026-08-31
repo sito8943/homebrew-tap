@@ -2,9 +2,9 @@
 cask "sito-wireguard-vpn" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.2.0"
-  sha256 arm:   "cdb62e908144902a4c31f01020d5b7cf35d72037887777a79b0fb780c852b47c",
-         intel: "4f0fa7d694672001dcb5e75c962616257f82ad88db4b2b1ead6e3bcdbbd18941"
+  version "0.3.0"
+  sha256 arm:   "b54c2b03695362c50e75e4cd2ba49bdab1a687f5db172aaf576e4c1a6bce4930",
+         intel: "9b8e536ffac4e06318ceaf0914a2579fd6d0d25c955e8717d255ad17baa8495b"
 
   url "https://github.com/sito8943/sito-wireguard-vpn/releases/download/v#{version}/Sito.WireGuard.VPN_#{version}_#{arch}.dmg"
   name "Sito WireGuard VPN"
