@@ -2,9 +2,9 @@
 cask "sito-file-browser" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.16.0"
-  sha256 arm:   "9925b5111e8d24ae108769d7b95219a2de578bf0728011d51261ed326d119ed4",
-         intel: "24b91493c9a9ee9ce4b908d28dae53f4110d3d6184282d32eaac9635f189a20c"
+  version "0.17.0"
+  sha256 arm:   "388e09f48a9937776c972af5fe532f24403db4d31062c7281084a4503c64b0be",
+         intel: "1392dc3a9bf035fd14d236200c574429abb378356b741902f568e09331da2c9f"
 
   url "https://github.com/sito8943/sito-file-browser/releases/download/v#{version}/Sito.File.Browser_#{version}_#{arch}.dmg"
   name "Sito File Browser"
