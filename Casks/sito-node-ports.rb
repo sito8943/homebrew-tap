@@ -2,9 +2,9 @@
 cask "sito-node-ports" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.0"
-  sha256 arm:   "d2c3547d885defbc52976d7d63755f3af6e4007ce5af4120f6f9ac0bd2e26c1e",
-         intel: "5eff48276149f6fabef3aa78d068f6e7740458ecac2786c6d3a91ced32acbbe6"
+  version "0.2.0"
+  sha256 arm:   "bdfa18574d6038e24df56edb490e6f5f4f0f87a6408c41ad8dabab5573e78f33",
+         intel: "f1b00b98ffc689fdaa54d17ee552e971780034c40ebe5213f102be02adb79fe5"
 
   url "https://github.com/sito8943/sito-node-ports/releases/download/v#{version}/Sito.Node.Ports_#{version}_#{arch}.dmg"
   name "Sito Node Ports"
