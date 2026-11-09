@@ -2,9 +2,9 @@
 cask "sito-mac-cleaner" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.0"
-  sha256 arm:   "eb5c0b5c2bb018783e6bc4ba07d59c3c2cfc1f295fd3d466051cc243c2ace9dc",
-         intel: "95e62c49bb18e986f950b23374eca3be7fbf0431b2d932569e7a6752ea06cf84"
+  version "0.2.0"
+  sha256 arm:   "d1caef09e2580fe332acfb2f553851bc16a35bbef27bb189ab8c95a3695a0313",
+         intel: "7cbc97436977c6e95e128b1f2bf2cb38c10c69b47423ab114980d3e849f6bf0d"
 
   url "https://github.com/sito8943/sito-mac-cleaner/releases/download/v#{version}/Sito.Mac.Cleaner_#{version}_#{arch}.dmg"
   name "Sito Mac Cleaner"
