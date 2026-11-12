@@ -2,9 +2,9 @@
 cask "sito-editor" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.5.0"
-  sha256 arm:   "63614be9ebbe303ff509d5700264007b7ac3aa9450345638a81aa5e919b1ee88",
-         intel: "f325c06cdf78320793f782831a37329a6f222cd01a777b220125dad6e6358833"
+  version "0.6.0"
+  sha256 arm:   "b82813f4e4d4f41401055bedd8c4df6e847cd3d02ac85b14b807b9f7d2546c20",
+         intel: "66bfa2cbca83845a1610880a9fba646ab20a1bb4ed8a3d9982e010e8e02a3eb9"
 
   url "https://github.com/sito8943/sito-editor/releases/download/v#{version}/Sito.Editor_#{version}_#{arch}.dmg"
   name "Sito Editor"
